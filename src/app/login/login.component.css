@@ -1,0 +1,36 @@
+.brand-logo {
+    max-width: 10%;
+    height: auto;
+  }
+
+body
+{
+    background-color: #EAE7DC;
+}
+
+h3
+{
+    color: #E85A4F;
+}
+
+h6
+{
+    color: black;
+}
+
+.auth-link
+{
+    color: #EAE7DC;
+}
+
+.btn-outline-secondary
+{
+    background-color: none;
+    color: black;
+    border: 2px solid  #e98074;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #e98074;
+    color: white;
+}
