@@ -1,5 +1,5 @@
-.brand-logo {
-    max-width: 10%;
+img {
+    max-width: 40%;
     height: auto;
   }
 
@@ -20,7 +20,7 @@ h6
 
 .auth-link
 {
-    color: #EAE7DC;
+    color: grey;
 }
 
 .btn-outline-secondary
@@ -33,4 +33,9 @@ h6
 .btn-outline-secondary:hover {
     background-color: #e98074;
     color: white;
+}
+
+.login-half-bg
+{
+    background-image: url("./rectoria.jpg");
 }
