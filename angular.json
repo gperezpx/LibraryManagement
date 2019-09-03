@@ -24,15 +24,11 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css",
               "src/assets/vendors/ti-icons/css/themify-icons.css",
               "src/assets/vendors/base/vendor.bundle.base.css"
             ],
             "scripts": [
-              "node_modules/jquery/dist/jquery.slim.min.js",
-              "node_modules/popper.js/dist/umd/popper.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js",
               "src/assets/vendors/base/vendor.bundle.base.js",
               "src/assets/js/chart.js",
               "src/assets/js/dashboard.js",
