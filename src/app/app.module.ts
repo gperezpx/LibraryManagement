@@ -17,7 +17,8 @@ import { ListarLibrosComponent } from './libros/listar-libros/listar-libros.comp
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
-
+import { FormsModule} from '@angular/forms';
+import { LoginService } from './login/login.service';
 
 @NgModule({
   declarations: [
@@ -39,9 +40,10 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [LoginService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
