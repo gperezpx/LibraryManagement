@@ -10,7 +10,7 @@ import { ListarAlumnosComponent } from './alumnos/listar-alumnos/listar-alumnos.
 import { AlumnosComponent } from './alumnos/alumnos.component';
 import { CrearAlumnoComponent } from './alumnos/crear-alumno/crear-alumno.component';
 import { LibrosComponent } from './libros/libros.component';
-import { CrearLibroComponent } from './crear-libro/crear-libro.component';
+import { CrearLibroComponent } from './libros/crear-libro/crear-libro.component';
 import { EliminarLibroComponent } from './libros/eliminar-libro/eliminar-libro.component';
 import { ListarLibrosComponent } from './libros/listar-libros/listar-libros.component';
 
