@@ -1,4 +1,24 @@
 <app-navbar></app-navbar>
-<app-sidebar></app-sidebar>
-<app-footer></app-footer>
-<router-outlet></router-outlet>
+<div class="container-fluid page-body-wrapper">
+    <app-sidebar></app-sidebar>
+    <!-- partial -->
+    <div class="main-panel">
+      <div class="content-wrapper">
+        <div class="row">
+          <div class="col-md-12 grid-margin stretch-card">
+            <div class="card position-relative">
+              <div class="card-body">
+                <p class="card-title">Detailed Reports</p>
+                <router-outlet></router-outlet>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- content-wrapper ends -->
+      <!-- partial:partials/_footer.html -->
+      
+      <app-footer></app-footer>
+    </div>
+    <!-- main-panel ends -->
+  </div>
