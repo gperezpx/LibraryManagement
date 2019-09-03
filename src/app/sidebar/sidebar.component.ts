@@ -11,6 +11,6 @@ export class SidebarComponent implements OnInit {
 
   ngOnInit() {
   }
-  public isCollapsed = false;
+  
 
 }

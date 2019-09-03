@@ -20625,7 +20625,7 @@ dl li {
 
 /* Sidebar */
 .sidebar {
-  min-height: calc(100vh - 70px);
+  min-height: 100%;
   background: #dddce1;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -20764,7 +20764,7 @@ dl li {
 }
 
 .sidebar .nav:not(.sub-menu) {
-  margin-top: 1.45rem;
+  /*margin-top: 1.45rem;*/
   margin-left: 0.375rem;
   margin-right: 0.375rem;
 }
