@@ -10,6 +10,7 @@ import { CrearAlumnoComponent } from './alumnos/crear-alumno/crear-alumno.compon
 import { CrearLibroComponent } from './libros/crear-libro/crear-libro.component';
 import { EliminarLibroComponent } from './libros/eliminar-libro/eliminar-libro.component';
 import { ListarLibrosComponent } from './libros/listar-libros/listar-libros.component';
+import { LibrosComponent } from './libros/libros.component';
 
 const routes: Routes = [
   {path: '', component: LoginComponent},
@@ -20,7 +21,7 @@ const routes: Routes = [
     {path: 'eliminar', component: EliminarAlumnoComponent},
     {path: 'mostrar', component: ListarAlumnosComponent}
   ]},
-  {path: 'libros', component: DashboardComponent, children: [
+  {path: 'libros', component: LibrosComponent, children: [
     {path: 'agregar', component: CrearLibroComponent},
     {path: 'eliminar', component: EliminarLibroComponent},
     {path: 'mostrar', component: ListarLibrosComponent}

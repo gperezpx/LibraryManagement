@@ -13,6 +13,8 @@ import { LibrosComponent } from './libros/libros.component';
 import { CrearLibroComponent } from './libros/crear-libro/crear-libro.component';
 import { EliminarLibroComponent } from './libros/eliminar-libro/eliminar-libro.component';
 import { ListarLibrosComponent } from './libros/listar-libros/listar-libros.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import { ListarLibrosComponent } from './libros/listar-libros/listar-libros.comp
     LibrosComponent,
     CrearLibroComponent,
     EliminarLibroComponent,
-    ListarLibrosComponent
+    ListarLibrosComponent,
+    SidebarComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
