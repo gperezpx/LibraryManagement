@@ -15,6 +15,7 @@ import { EliminarLibroComponent } from './libros/eliminar-libro/eliminar-libro.c
 import { ListarLibrosComponent } from './libros/listar-libros/listar-libros.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     EliminarLibroComponent,
     ListarLibrosComponent,
     SidebarComponent,
-    NavbarComponent
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
