@@ -10,6 +10,5 @@ export class LoginService{
         if((username=="admin")&&(password="12345")){
             this.router.navigate(['/dashboard']);
         }
-        
     }
 }
