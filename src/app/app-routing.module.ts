@@ -11,17 +11,18 @@ import { CrearLibroComponent } from './libros/crear-libro/crear-libro.component'
 import { EliminarLibroComponent } from './libros/eliminar-libro/eliminar-libro.component';
 import { ListarLibrosComponent } from './libros/listar-libros/listar-libros.component';
 import { LibrosComponent } from './libros/libros.component';
+import { LoginGuardian } from './login/login-guardian.service';
 
 const routes: Routes = [
   {path: '', component: LoginComponent},
   {path: 'login', component: LoginComponent},
-  {path: 'dashboard', component: DashboardComponent},
-  {path: 'alumnos', component: AlumnosComponent, children: [
+  {path: 'dashboard', component: DashboardComponent, canActivate:[LoginGuardian]},
+  {path: 'alumnos', component: AlumnosComponent, canActivate:[LoginGuardian], children: [
     {path: 'agregar', component: CrearAlumnoComponent},
     {path: 'eliminar', component: EliminarAlumnoComponent},
     {path: 'mostrar', component: ListarAlumnosComponent}
   ]},
-  {path: 'libros', component: LibrosComponent, children: [
+  {path: 'libros', component: LibrosComponent, canActivate:[LoginGuardian], children: [
     {path: 'agregar', component: CrearLibroComponent},
     {path: 'eliminar', component: EliminarLibroComponent},
     {path: 'mostrar', component: ListarLibrosComponent}

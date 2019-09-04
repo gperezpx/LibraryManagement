@@ -19,6 +19,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule} from '@angular/forms';
 import { LoginService } from './login/login.service';
+import { LoginGuardian } from './login/login-guardian.service';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,7 @@ import { LoginService } from './login/login.service';
     NgbModule,
     FormsModule
   ],
-  providers: [LoginService],
+  providers: [LoginService,LoginGuardian],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
