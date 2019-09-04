@@ -2,3 +2,15 @@
 {
     color: #E85A4F;
 }
+
+.btn-outline-secondary
+{
+    background-color: none;
+    color: black;
+    border: 2px solid  #e98074;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #e98074;
+    color: white;
+}
