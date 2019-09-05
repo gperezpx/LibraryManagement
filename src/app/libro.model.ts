@@ -1,12 +1,12 @@
 export class Libro{
-    idLibro: string;
-    nombreLibro: string;
-    numeroEdicion: string;
-    numeroEjemplares: string;
+    idlibro: string;
+    nombrelibro: string;
+    numedicion: string;
+    numejemplares: string;
     isbn: string;
-    idCategoria: string;
-    codigoAutor: string;
-    idEditorial: string;
+    idcategoria: string;
+    codigoautor: string;
+    ideditorial: string;
 
     constructor(){}
 }

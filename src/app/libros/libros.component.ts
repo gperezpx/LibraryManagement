@@ -10,6 +10,7 @@ export class LibrosComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+   
   }
 
 }

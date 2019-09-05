@@ -22,6 +22,8 @@ import { LoginService } from './login/login.service';
 import { LoginGuardian } from './login/login-guardian.service';
 import { DataServices } from './data.services';
 import { HttpClientModule } from '@angular/common/http';
+import { LibrosServices } from './libros/libros.services';
+import { AlumnosServices } from './alumnos/alumnos.services';
 
 @NgModule({
   declarations: [
@@ -47,7 +49,7 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     HttpClientModule
   ],
-  providers: [LoginService,LoginGuardian,DataServices],
+  providers: [LoginService,LoginGuardian,DataServices,LibrosServices,AlumnosServices],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
