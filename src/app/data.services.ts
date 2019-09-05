@@ -15,10 +15,10 @@ export class DataServices{
     
     constructor(private httpClient: HttpClient){}
     
-    getAlumnos(){
+    /*getAlumnos(){
         const url_api = "http://localhost:8080/api/alumnos/";
         return this.httpClient.get(url_api);
-    }
+    }*/
     getAlumnoById(matricula: string){
         const url_api = "";
         return this.httpClient.get(url_api);
@@ -36,10 +36,10 @@ export class DataServices{
         return this.httpClient.put(url_api,libro);
     }
 
-    getLibros(){
-        const url_api = "";
+    /*getLibros(){
+        const url_api = "http://localhost:8080/api/libros/";
         return this.httpClient.get(url_api);
-    }
+    }*/
     getLibroById(idLibro: string){
         const url_api = "";
         return this.httpClient.get(url_api);
