@@ -30,6 +30,16 @@ import { EjemplaresServices } from './ejemplares/ejemplares.services';
 import { CrearEjemplarComponent } from './ejemplares/crear-ejemplar/crear-ejemplar.component';
 import { ListarEjemplaresComponent } from './ejemplares/listar-ejemplares/listar-ejemplares.component';
 import { EliminarEjemplarComponent } from './ejemplares/eliminar-ejemplar/eliminar-ejemplar.component';
+import { ReservacionesComponent } from './reservaciones/reservaciones.component';
+import { CrearReservacionesComponent } from './reservaciones/crear-reservaciones/crear-reservaciones.component';
+import { ListarReservacionesComponent } from './reservaciones/listar-reservaciones/listar-reservaciones.component';
+import { EliminarReservacionesComponent } from './reservaciones/eliminar-reservaciones/eliminar-reservaciones.component';
+import { ReservacionesServices } from './reservaciones/reservation.service';
+import { PrestamosComponent } from './prestamos/prestamos.component';
+import { RegistrarPrestamoComponent } from './prestamos/registrar-prestamo/registrar-prestamo.component';
+import { ListarPrestamosComponent } from './prestamos/listar-prestamos/listar-prestamos.component';
+import { CerrarPrestamoComponent } from './prestamos/cerrar-prestamo/cerrar-prestamo.component';
+import { PrestamosServices } from './prestamos/prestamos.service';
 
 @NgModule({
   declarations: [
@@ -50,7 +60,15 @@ import { EliminarEjemplarComponent } from './ejemplares/eliminar-ejemplar/elimin
     EjemplaresComponent,
     CrearEjemplarComponent,
     EliminarEjemplarComponent,
-    ListarEjemplaresComponent
+    ListarEjemplaresComponent,
+    ReservacionesComponent,
+    CrearReservacionesComponent,
+    ListarReservacionesComponent,
+    EliminarReservacionesComponent,
+    PrestamosComponent,
+    RegistrarPrestamoComponent,
+    ListarPrestamosComponent,
+    CerrarPrestamoComponent
   ],
   imports: [
     BrowserModule,
@@ -59,7 +77,8 @@ import { EliminarEjemplarComponent } from './ejemplares/eliminar-ejemplar/elimin
     FormsModule,
     HttpClientModule
   ],
-  providers: [LoginService,LoginGuardian,DataServices,LibrosServices,AlumnosServices, EjemplaresServices],
+  providers: [LoginService,LoginGuardian,DataServices,LibrosServices,AlumnosServices, EjemplaresServices,
+  ReservacionesServices, PrestamosServices],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

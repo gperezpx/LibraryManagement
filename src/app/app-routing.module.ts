@@ -16,6 +16,10 @@ import { EliminarEjemplarComponent } from './ejemplares/eliminar-ejemplar/elimin
 import { CrearEjemplarComponent } from './ejemplares/crear-ejemplar/crear-ejemplar.component';
 import { ListarEjemplaresComponent } from './ejemplares/listar-ejemplares/listar-ejemplares.component';
 import { EjemplaresComponent } from './ejemplares/ejemplares.component';
+import { ReservacionesComponent } from './reservaciones/reservaciones.component';
+import { CrearReservacionesComponent } from './reservaciones/crear-reservaciones/crear-reservaciones.component';
+import { EliminarReservacionesComponent } from './reservaciones/eliminar-reservaciones/eliminar-reservaciones.component';
+import { ListarReservacionesComponent } from './reservaciones/listar-reservaciones/listar-reservaciones.component';
 
 const routes: Routes = [
   {path: '', component: LoginComponent},
@@ -35,6 +39,11 @@ const routes: Routes = [
     {path: 'agregar', component: CrearEjemplarComponent},
     {path: 'eliminar', component: EliminarEjemplarComponent},
     {path: 'mostrar', component: ListarEjemplaresComponent}
+  ]},
+  {path: 'reservaciones', component: ReservacionesComponent, canActivate:[LoginGuardian], children: [
+    {path: 'agregar', component: CrearReservacionesComponent},
+    {path: 'eliminar', component: EliminarReservacionesComponent},
+    {path: 'mostrar', component: ListarReservacionesComponent}
   ]}
 ];
 

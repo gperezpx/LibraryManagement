@@ -1,10 +1,10 @@
 export class Prestamo{
-    idPrestamo: string;
-    fechaPrestamo: string;
-    fechaEntrega: string;
-    fechaDevolucion: string;
-    matriculaAlumno: string;
-    idEjemplar: string;
+    idprestamo: string;
+    fechap: string;
+    fechae: string;
+    fechad: string;
+    matricula: string;
+    idejemplar: string;
 
     constructor(){}
 }

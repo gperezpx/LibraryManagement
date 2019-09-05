@@ -1,9 +1,9 @@
 export class Reservacion{
-    idReservacion: string;
-    fechaApartado: string;
-    fechaExpiracion: string;
-    matriculaAlumno: string;
-    idEjemplar: string;
+    idreservacion: string;
+    fechaapar: string;
+    fechaexp: string;
+    matricula: string;
+    idejemplar: string;
     
     constructor(){}
 }
