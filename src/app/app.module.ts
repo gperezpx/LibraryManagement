@@ -24,6 +24,12 @@ import { DataServices } from './data.services';
 import { HttpClientModule } from '@angular/common/http';
 import { LibrosServices } from './libros/libros.services';
 import { AlumnosServices } from './alumnos/alumnos.services';
+import { EjemplaresComponent } from './ejemplares/ejemplares.component';
+
+import { EjemplaresServices } from './ejemplares/ejemplares.services';
+import { CrearEjemplarComponent } from './ejemplares/crear-ejemplar/crear-ejemplar.component';
+import { ListarEjemplaresComponent } from './ejemplares/listar-ejemplares/listar-ejemplares.component';
+import { EliminarEjemplarComponent } from './ejemplares/eliminar-ejemplar/eliminar-ejemplar.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +46,11 @@ import { AlumnosServices } from './alumnos/alumnos.services';
     ListarLibrosComponent,
     SidebarComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    EjemplaresComponent,
+    CrearEjemplarComponent,
+    EliminarEjemplarComponent,
+    ListarEjemplaresComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +59,7 @@ import { AlumnosServices } from './alumnos/alumnos.services';
     FormsModule,
     HttpClientModule
   ],
-  providers: [LoginService,LoginGuardian,DataServices,LibrosServices,AlumnosServices],
+  providers: [LoginService,LoginGuardian,DataServices,LibrosServices,AlumnosServices, EjemplaresServices],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

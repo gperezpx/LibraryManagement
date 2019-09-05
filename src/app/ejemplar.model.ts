@@ -1,8 +1,8 @@
 export class Ejemplar{
-    idEjemplar: string;
+    idejemplar: string;
     condicion: string;
     estado: string;
-    idLibro: string;
+    idlibro: string;
 
     constructor(){}
 }

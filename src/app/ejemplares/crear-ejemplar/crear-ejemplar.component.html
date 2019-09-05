@@ -2,7 +2,7 @@
     <div class="card">
         <div class="card-body">
             <h4 class="card-title" id="title">Add a new student</h4>
-            <form class="form-sample" #f="ngForm" (ngSubmit)="f.form.valid && guardar(f)">
+            <form class="form-sample"">
                 <p class="card-description">
                     Personal info
                 </p>
@@ -11,7 +11,7 @@
                         <div class="form-group row">
                             <label class="col-sm-3 col-form-label">Code</label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control" [(ngModel)]="alumno.matricula" required/>
+                                <input type="text" class="form-control"  required/>
                             </div>
                         </div>
                     </div>
@@ -19,7 +19,7 @@
                         <div class="form-group row">
                             <label class="col-sm-3 col-form-label">Full Name</label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control" [(ngModel)]="alumno.fullname" required/>
+                                <input type="text" class="form-control"  required/>
                             </div>
                         </div>
                     </div>
@@ -29,7 +29,7 @@
                         <div class="form-group row">
                             <label class="col-sm-3 col-form-label">Status</label>
                             <div class="col-sm-9">
-                                <select class="form-control" [(ngModel)]="alumno.estatus">
+                                <select class="form-control">
                                     <option>Active</option>
                                     <option>No regular</option>
                                 </select>
@@ -40,7 +40,7 @@
                         <div class="form-group row">
                             <label class="col-sm-3 col-form-label">E-mail</label>
                             <div class="col-sm-9">
-                                <input class="form-control"  [(ngModel)]="alumno.email" required/>
+                                <input class="form-control"/>
                             </div>
                         </div>
                     </div>
@@ -93,7 +93,7 @@
                         <div class="form-group row">
                             <label class="col-sm-3 col-form-label">Adress</label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control" [(ngModel)]="alumno.direccion" required/>
+                                <input type="text" class="form-control" required/>
                             </div>
                         </div>
                     </div>
@@ -101,7 +101,7 @@
                         <div class="form-group row">
                             <label class="col-sm-3 col-form-label">Phone</label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control" [(ngModel)]="alumno.telefono" required/>
+                                <input type="text" class="form-control"  required/>
                             </div>
                         </div>
                     </div>
@@ -111,7 +111,7 @@
                         <div class="form-group row">
                             <label class="col-sm-3 col-form-label">Password</label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control" [(ngModel)]="alumno.password" required/>
+                                <input type="text" class="form-control" required/>
                             </div>
                         </div>
                     </div>
@@ -124,8 +124,6 @@
                         </div>
                     </div>
                 </div>
-                
-            </form>
         </div>
     </div>
 </div>

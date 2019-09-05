@@ -12,6 +12,10 @@ import { EliminarLibroComponent } from './libros/eliminar-libro/eliminar-libro.c
 import { ListarLibrosComponent } from './libros/listar-libros/listar-libros.component';
 import { LibrosComponent } from './libros/libros.component';
 import { LoginGuardian } from './login/login-guardian.service';
+import { EliminarEjemplarComponent } from './ejemplares/eliminar-ejemplar/eliminar-ejemplar.component';
+import { CrearEjemplarComponent } from './ejemplares/crear-ejemplar/crear-ejemplar.component';
+import { ListarEjemplaresComponent } from './ejemplares/listar-ejemplares/listar-ejemplares.component';
+import { EjemplaresComponent } from './ejemplares/ejemplares.component';
 
 const routes: Routes = [
   {path: '', component: LoginComponent},
@@ -26,6 +30,11 @@ const routes: Routes = [
     {path: 'agregar', component: CrearLibroComponent},
     {path: 'eliminar', component: EliminarLibroComponent},
     {path: 'mostrar', component: ListarLibrosComponent}
+  ]},
+  {path: 'ejemplares', component: EjemplaresComponent, canActivate:[LoginGuardian], children: [
+    {path: 'agregar', component: CrearEjemplarComponent},
+    {path: 'eliminar', component: EliminarEjemplarComponent},
+    {path: 'mostrar', component: ListarEjemplaresComponent}
   ]}
 ];
 

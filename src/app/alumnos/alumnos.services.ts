@@ -11,5 +11,9 @@ export class AlumnosServices{
     getAlumnos(): Observable<Alumno[]>{
         return this.http.get<Alumno[]>(this.urlEndPoint);
     }
+    saveAlumno(alumno: Alumno){
+        this.http.post(this.urlEndPoint,alumno);
+    }
+    
 
 }
