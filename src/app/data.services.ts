@@ -20,7 +20,7 @@ export class DataServices{
         return this.httpClient.get(url_api);
     }*/
     getAlumnoById(matricula: string){
-        const url_api = "";
+        const url_api = "http://localhost:8080/api/alumnos/"+matricula;
         return this.httpClient.get(url_api);
     }
     deleteAlumno(matricula: string){
