@@ -4,5 +4,6 @@ export class Reservacion{
     fechaExpiracion: string;
     matriculaAlumno: string;
     idEjemplar: string;
+    
     constructor(){}
 }

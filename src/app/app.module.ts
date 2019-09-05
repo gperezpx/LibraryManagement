@@ -21,6 +21,7 @@ import { FormsModule} from '@angular/forms';
 import { LoginService } from './login/login.service';
 import { LoginGuardian } from './login/login-guardian.service';
 import { DataServices } from './data.services';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { DataServices } from './data.services';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [LoginService,LoginGuardian,DataServices],
   bootstrap: [AppComponent]

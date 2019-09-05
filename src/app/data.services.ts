@@ -16,7 +16,7 @@ export class DataServices{
     constructor(private httpClient: HttpClient){}
     
     getAlumnos(){
-        const url_api = "";
+        const url_api = "http://localhost:8080/api/alumnos/";
         return this.httpClient.get(url_api);
     }
     getAlumnoById(matricula: string){

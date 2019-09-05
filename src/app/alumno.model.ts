@@ -1,11 +1,11 @@
 export class Alumno{
 
     matricula: string;
-    nombreAlumno: string;
+    fullname: string;
     direccion: string;
     telefono: string;
     email: string;
-    status: string;
+    estatus: string;
     password: string;
 
     constructor(){}
